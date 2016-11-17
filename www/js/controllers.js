@@ -157,12 +157,12 @@ angular.module('starter.controllers', ['ionic', 'ui.router'])
               .then(function (result) {
                   refreshMedia.refresh(targetPath);
                   $cordovaToast
-.show('Image Downloaded Successfully!', 'long', 'center')
-.then(function (success) {
-    // success
-}, function (error) {
-    // error
-});
+                    .show('Image Downloaded Successfully!', 'long', 'center')
+                    .then(function (success) {
+                        // success
+                    }, function (error) {
+                        // error
+                    });
               }, function (err) {
                   // Error
                   alert(JSON.stringify(err));
@@ -178,12 +178,12 @@ angular.module('starter.controllers', ['ionic', 'ui.router'])
             var filename = url.substring(url.lastIndexOf('/') + 1);
             cordova.plugins.saveToPhotoAlbum.save(url, function (nativeURL) {
                 $cordovaToast
-.show('Image Downloaded Successfully!', 'long', 'center')
-.then(function (success) {
-    // success
-}, function (error) {
-    // error
-});
+                .show('Image Downloaded Successfully!', 'long', 'center')
+                .then(function (success) {
+                    // success
+                }, function (error) {
+                    // error
+                });
             }, function (err) {
                 console.error(err);
             });
@@ -373,15 +373,15 @@ angular.module('starter.controllers', ['ionic', 'ui.router'])
 
         $cordovaCamera.getPicture(options).then(function (imageData) {
             $cordovaDialogs.alert(imageData, 'Image Path', 'OK')
-.then(function () {
-    // callback success
-});
-        }, function (err) {
-            // error
-        });
-    }
+            .then(function () {
+                // callback success
+            });
+                    }, function (err) {
+                        // error
+                    });
+                }
 
-})
+            })
 
 .controller('SearchCtrl', function ($scope, LoginService, $ionicPopup, $state, $ionicHistory) {
     $scope.data = {};
@@ -504,22 +504,22 @@ angular.module('starter.controllers', ['ionic', 'ui.router'])
 })
 
 .controller('AppCtrl', function ($scope, $state, $ionicHistory) {
-  $scope.goback = function () {
+      $scope.goback = function () {
 
-      $ionicHistory.goBack();
-  }
+          $ionicHistory.goBack();
+      }
 
-  $scope.gosettings = function () {
-      $state.go('settings');
-  }
+      $scope.gosettings = function () {
+          $state.go('settings');
+      }
 
-  $scope.gosearch = function () {
-      $state.go('search');
-  }
+      $scope.gosearch = function () {
+          $state.go('search');
+      }
 
-  $scope.goContacts = function () {
-      $state.go('contacts');
-  }
+      $scope.goContacts = function () {
+          $state.go('contacts');
+      }
 
     $scope.gologout = function () {
         localStorage.clear();
