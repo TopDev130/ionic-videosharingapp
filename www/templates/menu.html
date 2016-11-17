@@ -1,0 +1,70 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+
+        <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <!-- TABS -->
+    <ion-tabs class="tabs-icon-top tabs-dark tabs-active">
+
+
+      <ion-tab title="Reef" icon-off="icon ion-ios-analytics-outline" icon-on="icon ion-ios-analytics" href="#/app/dash">
+        <ion-nav-view name="app-dash"></ion-nav-view>
+      </ion-tab>
+
+       <!-- Shocked Tab (Shocked) -->
+      <!-- <ion-tab title="Shocked" icon-off=" ion-ios-color-wand-outline" icon-on=" ion-ios-color-wand" href="#/app/shocked" id="clickButton">
+        <ion-nav-view name="app-shocked"></ion-nav-view>
+      </ion-tab> -->
+
+      <!-- Shoot Tab (shoot) -->
+      <ion-tab title="Jifflo" icon-off="ion-ios-reverse-camera-outline" icon-on="ion-ios-reverse-camera" href="#/app/shoot" id="clickButton">
+        <ion-nav-view name="app-shoot"></ion-nav-view>
+      </ion-tab>
+
+      <!-- Notifications Tab (chats) -->
+      <ion-tab title="Notifications" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/app/chats">
+        <ion-nav-view name="app-chats"></ion-nav-view>
+      </ion-tab>
+
+      <!-- My Profile Tab  (account) -->
+      <ion-tab title="Me" icon-off="ion-ios-body-outline" icon-on="icon ion-ios-body" href="#/app/account">
+        <ion-nav-view name="app-account"></ion-nav-view>
+      </ion-tab>
+
+    </ion-tabs>
+
+  </ion-side-menu-content>
+
+   <!-- Side Menu (left) -->
+  <ion-side-menu side="left" width="197" style="background-color: #202632;">
+    <ion-header-bar style="background-color: #202632;">
+    <!--  <h1 class="title">Jifflo</h1> -->
+    <img class="full-image" style="max-height: 50px; width: 100%; height: auto; object-fit: contain; vertical-align: middle;" src="img/navpic.png">
+    </ion-header-bar>
+    <ion-content> 
+      <ion-list>
+        <ion-item style="font-weight: bold; font-size: 18px; border-top-width: 3.5px; background-color: #202632; color: #FFFFFF; border-width: 0px;" menu-close ng-click="gosearch()">
+           <i style="color: #615eff;" class='icon ion-search'></i> Search
+        </ion-item>
+        <ion-item style="font-weight: bold; font-size: 18px; border-top-width: 3.5px; background-color: #202632; color: #FFFFFF; border-width: 0px;" menu-close ng-click="goContacts()">
+            <i style="color: #615eff;" class='icon ion-ios-people'></i> Find Contacts 
+        </ion-item>
+        <ion-item style="font-weight: bold; font-size: 18px; border-top-width: 3.5px; background-color: #202632; color: #FFFFFF; border-width: 0px;" menu-close ng-click="gosettings()">
+          <i style="color: #615eff;" class='icon ion-android-settings'></i> Settings 
+        </ion-item>
+         <ion-item style="font-weight: bold; font-size: 18px; border-top-width: 3.5px; background-color: #202632; color: #FFFFFF; border-width: 0px;"menu-close ng-click="gologout()">  
+           <i style="color: #615eff;" class='icon ion-android-exit'></i> Log Out 
+        </ion-item>
+      </ion-list>
+       <center> <img class="full-image" style="font-weight: bold; font-size: 18px; border-top-width: 3.5px; background-color: #202632; color: #393939; border-width: 0px; max-width: 65px; max-height: 65px;" src="img/logopic.png"> </center>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

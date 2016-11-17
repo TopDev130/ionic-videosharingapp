@@ -1,0 +1,36 @@
+<ion-view>
+  <ion-nav-bar align-title="center" class="bar-calm">
+    <ion-nav-buttons side="left">
+      <button class="button button-icon button-clear button-light ion-navicon" menu-toggle="left">
+      </button>
+    </ion-nav-buttons>
+    <ion-nav-title> <img class="full-image" style="max-height: 37px; width: 100%; height: auto; object-fit: contain; vertical-align: middle;" src="img/navpic.png"> </ion-nav-title>
+  </ion-nav-buttons>
+
+</ion-nav-bar >
+
+
+    <ion-content class="bg_content" ng-controller="ShootCtrl">
+        <br />
+        <span class="btn button-large button-clear btn-file icon ion-ios-cloud-upload" style="color: #FFFFFF;">
+            Choose Video<input type="file" id="fileVideo" accept="video/*" onchange="angular.element(this).scope().getFileInfo(this)">
+        </span>
+
+             <!--   ng-click="captureVideo()"> -->
+
+        <div ng-bind-html="videoPlay"></div>
+
+        <div class="item item-input-inset item-dark" style="border-color: transparent;">
+      <label class="item item-input-wrapper">
+      <center> <input style="color: #FFFFFF;" type="text" placeholder="Caption"> </center>
+      </label>
+        </div>
+        <div class="button-bar" style= "border: solid; border-width: 2px;">
+        <button class="button button-stable button-medium icon ion-ios-speedometer-outline" style="border-right: solid; border-width: 2px;"> Change Speed </a>
+        <button class="button button-stable button-medium icon ion-paintbrush"> Add Filter </a>
+        </div>
+
+        <button class="button button-block icon icon-right ion-arrow-right-a" style="background-color: #615eff; border-radius: 8px; font-weight: bold;"> Transform and Upload Post </button>
+
+    </ion-content>
+</ion-view>

@@ -1,0 +1,42 @@
+<ion-view>
+
+<Head>
+    <ion-nav-bar align-title="center" class="bar-calm">
+  <ion-nav-buttons side="left">
+    <button class="button button-clear icon ion-chevron-left" ng-click="goback()" ></button> 
+  </ion-nav-buttons>
+</ion-nav-bar>
+</Head>
+
+<Body>
+<ion-content class="bg_content">
+           <div class="divy" style="border-bottom: solid; border-bottom-color: #cbd0ef; border-bottom-width: 1px;">
+            <div class="item item-avatar">
+                <img src='img/sample-avi.png'>
+                <h2> username </h2>
+               <!-- <p>November 05, 1955</p> -->
+            </div>
+            <div class="item item-body">
+                <center> <img class="full-image imp" src='img/sample-image.gif'> </center>
+                <p>
+                    <center> <p style="color:#393939; font-size: 16px;"> Caption </p> </center>
+                </p>
+               <center> <div>
+                    <a class="button button-small button-stable icon ion-ios-heart-outline" ng-click="GoLikes()"> 23 </a>
+                    <a class="button button-small button-stable icon ion-chatbubble-working" ng-click="GoComments()"> 8 </a>
+                </div> </center>
+            </div>
+          <div class="button-bar" >
+        <a class="button button-stable button-medium icon ion-ios-heart"> </a>
+        <a class="button button-stable button-medium icon icon ion-chatbubble" ng-click="GoComments()"> </a>
+         <a class="button button-stable button-medium icon ion-android-share-alt" ng-click="share()"> </a>
+        <a class="button button-stable button-medium icon ion-ios-download-outline" ng-click="saveImage()"> </a>
+
+        </div>
+
+            </div>
+
+</ion-content>
+</Body>
+
+</ion-view>

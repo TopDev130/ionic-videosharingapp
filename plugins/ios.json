@@ -1,0 +1,78 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.guinatal.refreshgallery": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "com.nimingban.cordova.savetophotoalbum": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-admobpro": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-camera": {
+            "CAMERA_USAGE_DESCRIPTION": " ",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-extension": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-media-capture": {
+            "CAMERA_USAGE_DESCRIPTION": " ",
+            "MICROPHONE_USAGE_DESCRIPTION": " ",
+            "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-x-toast": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        },
+        "cordova-plugin-contacts": {
+            "CONTACTS_USAGE_DESCRIPTION": " ",
+            "PACKAGE_NAME": "com.ionicframework.jifflo159216"
+        }
+    },
+    "dependent_plugins": {}
+}

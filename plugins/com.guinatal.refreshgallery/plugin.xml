@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.guinatal.refreshgallery"
+    version="1.0.9">
+
+    <name>RefreshGalleryPlugin</name>
+    <author>Guilherme Natal de Mello</author>
+    <description>This plugin was made to refresh the gallery on android device.</description>
+
+    <js-module src="www/pluginRefreshGallery.js" name="pluginRefreshGallery">
+      <clobbers target="window.refreshMedia" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+
+      <!-- config.xml -->
+      <config-file target="res/xml/config.xml" parent="/*">
+  			<feature name="PluginRefreshGallery" >
+  				<param name="android-package" value="com.guinatal.refreshgallery.PluginRefreshGallery"/>
+  			</feature>
+  		</config-file>
+
+      <!-- java file -->
+      <source-file src="src/android/com/guinatal/refreshgallery/PluginRefreshGallery.java"
+        target-dir="src/com/guinatal/refreshgallery" />
+
+    </platform>
+
+</plugin>

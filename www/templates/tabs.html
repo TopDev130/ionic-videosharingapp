@@ -1,0 +1,30 @@
+<!--
+Create tabs with an icon and label, using the tabs-positive style.
+Each tab's child <ion-nav-view> directive will have its own
+navigation history that also transitions its views in and out.
+-->
+<ion-tabs class="tabs-icon-top tabs-stable tabs-color-active-calm">
+
+
+  <!-- Feed Tab (dash) -->
+  <ion-tab title="Reef" icon-off="icon ion-ios-analytics-outline" icon-on="icon ion-ios-analytics" href="#/tab/dash">
+    <ion-nav-view name="tab-dash"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Shoot Tab (shoot) -->
+  <ion-tab title="Jifflo" icon-off="ion-ios-reverse-camera-outline" icon-on="ion-ios-reverse-camera" href="#/tab/shoot" id="clickButton">
+    <ion-nav-view name="tab-shoot"></ion-nav-view>
+  </ion-tab>
+
+  <!-- Notifications Tab (chats) -->
+  <ion-tab title="Notifications" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/chats">
+    <ion-nav-view name="tab-chats"></ion-nav-view>
+  </ion-tab>
+
+  <!-- My Profile Tab  (account) -->
+  <ion-tab title="My Profile" icon-off="ion-ios-body-outline" icon-on="icon ion-ios-body" href="#/tab/account">
+    <ion-nav-view name="tab-account"></ion-nav-view>
+  </ion-tab>
+
+
+</ion-tabs>

@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-refresh-gallery",
+  "version": "1.0.9",
+  "description": "Update the gallery when saving a picture on android",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lotterfriends/refreshgallery.git"
+  },
+  "keywords": [
+    "cordova",
+    "android",
+    "gallery",
+    "refresh"
+  ],
+  "author": "Guilherme Natal de Mello",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lotterfriends/refreshgallery/issues"
+  },
+  "homepage": "https://github.com/lotterfriends/refreshgallery#readme"
+}

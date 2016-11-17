@@ -1,0 +1,29 @@
+<ion-view name="login-view">
+
+<head>
+      <ion-nav-bar align-title="center" class="bar-calm">
+      </ion-nav-bar>
+</head>
+
+<body>
+
+
+    <ion-content class="bg_content padding">
+    <img class="full-image" src='img/logo.png'>     
+    <div class="list list-inset" style="background-color: transparent;">
+    <label class="item item-input">
+    <input type="text" placeholder="Username" ng-model="data.username" style="color: white;">
+    </label>
+    <label class="item item-input">
+    <input type="password" placeholder="Password" ng-model="data.password" style="color: white;">
+    </label>
+    </div>
+
+    
+    <button class="button button-block button-positive" ng-click="login()" style="background-color: #615eff; border-radius: 8px; font-weight: bold;" >Login</button>
+    <button class="button button-block button-stable" ng-click="gosignup()" style="background-color: transparent; border: solid; border-width: 2px; border-radius: 8px;"> Sign Up </button>
+    <button class="button button-block button-stable" ng-click="goresetpassword()" style="background-color: transparent; border: solid; border-width: 2px; border-radius: 8px;"> Reset Password </button>
+    </ion-content>
+</body>
+
+</ion-view>

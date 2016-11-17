@@ -1,0 +1,42 @@
+<ion-view>
+
+<Head>
+    <ion-nav-bar align-title="center" class="bar-calm">
+      <ion-nav-buttons side="left">
+      <button class="button button-clear icon ion-chevron-left" ng-click="goback()"></button>
+      </ion-nav-buttons>
+      <ion-nav-title style="font-weight: bold; font-size: 18px;"> Comments On This Post </ion-nav-title>
+    </ion-nav-bar>
+</Head>
+
+<Body>
+    <ion-content class="has-footer bg_content" >
+     <div style ="border-top: solid; border-top-color: #cbd0ef; border-top-width: 1px;"> </div>
+   <div class ="divy" style="border-bottom: solid; border-bottom-color: #cbd0ef; border-bottom-width: 1px;" >
+ <div class="item item-avatar" ng-click="GoUserProfile()">
+                <img src='img/sample-avi.png'>
+                <h3 style="color: #8387fc; font-size: 17px; width: bold;"> emilygarza </h3>
+                <p style="font-size: 15.5px;"">Liked your post. </p>
+</div>
+</div>
+    </ion-content>
+
+              <ion-footer-bar class="bar-stable item-input-inset message-footer" style="background-size:0; background-color: #393939 !important; border:0px;" keyboard-attach>
+
+                  <label class="item-input-wrapper"> 
+                      <input type="text" class="" placeholder="Send a message..." ng-model="message.theMessage"/>
+                  </label>
+
+                    <button class="button button-icon icon ion-android-send footer-btn" style="color:white;" type="submit" >
+                    </button>
+
+              </ion-footer-bar>
+
+
+    <!-- <ion-footer-bar keyboard-attach>
+    <input type="text" placeholder= "Comment" >
+    <button class="button button-dark"> Send </button>
+    </ion-footer-bar> -->
+</Body>
+
+</ion-view>

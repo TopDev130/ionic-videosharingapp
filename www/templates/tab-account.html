@@ -1,0 +1,145 @@
+<!-- MY PROFILE TAB -->
+
+<ion-view>
+
+<HEAD>
+
+<!--Nav Bar with Setting and Search Buttons -->
+ <ion-nav-bar align-title="center" class="bar-calm">
+
+  <ion-nav-buttons side="left">
+    <button class="button button-icon button-clear button-light ion-navicon" menu-toggle="left">
+    </button>
+
+  </ion-nav-buttons>
+
+    <ion-nav-title> <img class="full-image" style="max-height: 37px; width: 100%; height: auto; object-fit: contain; vertical-align: middle;" src="img/navpic.png"> </ion-nav-title>
+
+
+
+</ion-nav-bar>
+
+
+<!-- <ion-content>
+            <div class="item item-avatar" padding='has nav-bar'>
+                <img src='img/sample-avi.png'>
+                <h2> Sample User 1 </h2>
+                 <button class="button button-medium button-dark"> Followers: 15 </button>
+                  <button class="button button-medium button-dark"> Following: 14 </button>
+            </div>
+</ion-content>-->
+
+</HEAD>
+
+<body>
+<ion-content class="bg_content">
+
+  <ion-refresher
+    pulling-text="Pull to refresh..."
+    >
+  </ion-refresher>
+
+  <div style ="border-top: solid; border-top-color: #cbd0ef; border-top-width: 1px;"> </div>
+
+<div class="divy" style="border-bottom: solid; border-bottom-color: #cbd0ef; border-bottom-width: 1px;">
+ <div class="item item-avatar" padding='has nav-bar'>
+                <img src='img/avi4.jpg'>
+                <h3 style="color: #FFFFFF; font-size: 23px; width: bold;"> medha_r </h3>
+                <h2> Medha Rajashankar </h2>
+                </div> 
+                <!-- <button class="button button-small button-dark" ng-click="GoShadows()"> Shadows: 15 </button>
+                  <button class="button button-small button-dark" ng-click="GoShadowing()"> Shadowing: 14 </button> -->
+        <div>
+        <div class="button-bar">
+        <a class="button button-stable button-medium icon ion-android-people" style="font-size: 12px;" ng-click="GoShadows()"> 264 Shadows </a>
+        <a class="button button-stable button-medium icon ion-android-people" style="font-size: 12px;" ng-click="GoShadowing()"> Shadowing 255 </a>
+        </div>
+</div>
+
+     </div>
+
+
+
+
+          <!-- Sample User 1 -->
+          <div class="divy" style="border-bottom: solid; border-bottom-color: #cbd0ef; border-bottom-width: 1px;" >
+           <div class="item item-avatar">
+                <img src='img/avi4.jpg'>
+                <h2> medha_r </h2>
+               <!-- <p>November 05, 1955</p> -->
+            </div>
+            <div class="item item-body">
+                 <center> <img class="full-image photoformat" src='img/sample-image2.gif'> </center>
+                 <p>
+                    <center> <p style="color:#393939; font-size: 16px;"> Missing Summer🌅 </p> </center>
+                </p>
+                 <center> <div>
+                    <a class="button button-small button-stable icon ion-ios-heart-outline" ng-click="GoLikes()"> 23 </a>
+                    <a class="button button-small button-stable icon ion-chatbubble-working" ng-click="GoComments()"> 8 </a>
+                </div> </center>
+            </div>
+           <div class="button-bar">
+        <a class="button button-stable button-medium icon ion-ios-heart"> </a>
+        <a class="button button-stable button-medium icon icon ion-chatbubble" ng-click="GoComments()"> </a>
+         <a class="button button-stable button-medium icon ion-android-share-alt" ng-click="share()"> </a>
+        <a class="button button-stable button-medium icon ion-ios-download-outline" ng-click="saveImage()"> </a>
+        <a class="button button-stable button-medium icon ion-ios-trash"> </a>
+
+        </div>
+            </div>
+
+        <!-- Sample User 2 -->
+        <div class="divy" style="border-bottom: solid; border-bottom-color: #cbd0ef; border-bottom-width: 1px;" >
+                     <div class="item item-avatar">
+                <img src='img/sample-avi.png'>
+                <h2> username </h2>
+            </div> 
+            <div class="item item-body">
+               <center> <img class="full-image photoformat" src='img/sample-image2.gif'> </center>
+                 <p>
+                    <center> <p style="color:#393939; font-size: 16px;"> Caption </p> </center>
+                </p>
+                <center> <div>
+                    <a class="button button-small button-stable icon ion-ios-heart-outline" ng-click="GoLikes()"> 23 </a>
+                    <a class="button button-small button-stable icon ion-chatbubble-working" ng-click="GoComments()"> 8 </a>
+                </div> </center>
+            </div>
+           <div class="button-bar">
+        <a class="button button-stable button-medium icon ion-ios-heart"> </a>
+        <a class="button button-stable button-medium icon ion-chatbubble" ng-click="GoComments()"> </a>
+         <a class="button button-stable button-medium icon ion-android-share-alt"> </a>
+        <a class="button button-stable button-medium icon ion-ios-download-outline" ng-click="saveImage()"> </a>
+        <a class="button button-stable button-medium icon ion-ios-trash"> </a>
+        </div>
+            </div>
+
+        <!-- Sample User 3 -->
+        <div class="divy" style="border-bottom: solid; border-bottom-color: #cbd0ef; border-bottom-width: 1px;"  >
+                <div class="item item-avatar">
+                <img src='img/sample-avi.png'>
+                <h2> username </h2>
+            </div> 
+            <div class="item item-body">
+                <center> <img class="full-image photoformat" src='img/sample-image2.gif'> </center>
+                 <p>
+                    <center> <p style="color:#393939; font-size: 16px;"> Caption </p> </center>
+                </p>
+               <center> <div>
+                    <a class="button button-small button-stable icon ion-ios-heart-outline" ng-click="GoLikes()"> 23 </a>
+                    <a class="button button-small button-stable icon ion-chatbubble-working" ng-click="GoComments()"> 8 </a>
+                </div> </center>
+            </div>
+           <div class="button-bar">
+        <a class="button button-stable button-medium icon ion-ios-heart"> </a>
+        <a class="button button-stable button-medium icon icon ion-chatbubble" ng-click="GoComments()"> </a>
+         <a class="button button-stable button-medium icon ion-android-share-alt"> </a>
+        <a class="button button-stable button-medium icon ion-ios-download-outline" ng-click="saveImage()"> </a>
+        <a class="button button-stable button-medium icon ion-ios-trash"> </a>
+
+        </div>
+            </div>
+
+</ion-content>
+</body>
+
+</ion-view>

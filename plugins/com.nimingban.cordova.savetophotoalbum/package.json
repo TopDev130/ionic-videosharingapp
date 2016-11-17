@@ -1,0 +1,40 @@
+{
+  "name": "cordova-save-to-photoalbum",
+  "version": "0.0.1",
+  "description": "iOS only. Save image file(gif, jpg, png) to photo album.",
+  "cordova": {
+    "id": "com.nimingban.cordova.savetophotoalbum",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuanwowo/cordova-save-to-photoalbum.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "cordova-ios",
+    "ios",
+    "image",
+    "photoalbum",
+    "photogallery",
+    "gallery",
+    "gif",
+    "base64"
+  ],
+  "author": "Yuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuanwowo/cordova-save-to-photoalbum/issues"
+  },
+  "homepage": "https://github.com/yuanwowo/cordova-save-to-photoalbum#readme"
+}

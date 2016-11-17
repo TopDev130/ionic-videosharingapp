@@ -1,0 +1,61 @@
+<ion-view>
+
+<Head>
+    <ion-nav-bar align-title="center" class="bar-calm">
+      <ion-nav-buttons side="left">
+      <button class="button button-clear icon ion-chevron-left" ng-click="goback()"></button>
+      </ion-nav-buttons>
+       <ion-nav-title style="font-weight: bold; font-size: 18px;"> Find Contacts </ion-nav-title>
+    </ion-nav-bar>
+</Head>
+
+<body>
+    <ion-content class="bg_content">
+
+    <p style="color: #d5ddea; font-size: 17px; text-align: center; "> Enter your phone number so your friends can find you on Jifflo too! </p>
+    <div class="list">
+    <div class="item item-input-inset item-dark" style="border-color: transparent;">
+      <label class="item item-input-wrapper item-stable">
+      <input style="color: #FFFFFF;" type="tel" placeholder="Phone Number">
+      </label>
+      <button class="button button-dark"> Done </button>
+     </div>
+
+     <button style="background-color: #615eff; border-radius: 8px; font-weight: bold;" class="button button-block button-large icon icon-right ion-ios-people" > Go Find Contacts </button>
+     <ul class="list">
+        <li class="item card" ng-repeat="item in contacts">
+            <div ng-repeat="n in item.phoneNumbers">
+                {{n.value}}</div> 
+        </li>
+    </ul>
+<div style ="border-top: solid; border-top-color: #cbd0ef; border-top-width: 1px;"> </div>
+     <div class="divy" style="border-bottom: solid; border-bottom-color: #cbd0ef; border-bottom-width: 1px;" >
+    <div class="item item-avatar" ng-click="GoPost()">
+                <img src='img/avi5.jpg'>
+                <h3 style="color: #8387fc; font-size: 17px;"> emilygarza </h3>
+                <h2 style="color: #FFFFFF;"> Emily Garza </h2>
+
+</div>
+</div>
+
+  <div class="divy" style="border-bottom: solid; border-bottom-color: #cbd0ef; border-bottom-width: 1px;" >
+  <div class="item item-avatar" ng-click="GoUserProfile()">
+                <img src='img/avi7.jpg'>
+             <h3 style="color: #8387fc; font-size: 17px;"> snehakoduru </h3>
+                <h2 style="color: #FFFFFF;"> Sneha Koduru </h2>
+
+
+</div>
+</div>
+
+  <div class="divy" style="border-bottom: solid; border-bottom-color: #cbd0ef; border-bottom-width: 1px;" >
+  <div class="item item-avatar" ng-click="GoUserProfile()">
+                <img src='img/avi6.png'>
+            <h3 style="color: #8387fc; font-size: 17px;"> aliciadiaz </h3>
+                <h2 style="color: #FFFFFF;"> Alicia Diaz </h2>
+</div>
+</div>
+    </ion-content> 
+</body>
+
+ </ion-view>
